@@ -6,4 +6,4 @@ def home(request):
         name = request.POST.get("name")
         if name:
             context["greeting"] = f"Hello, {name}! Welcome to my Website."
-    return render(request, 'two_app/home.html', context)
+    return render(request, 'app_two/home.html', context)
